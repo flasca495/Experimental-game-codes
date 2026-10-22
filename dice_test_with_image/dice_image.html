@@ -1,1 +1,11 @@
-
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<script type="module" src="https://pyscript.net/releases/2025.8.1/core.js"></script>
+<script type="mpy">
+    import js
+    import random
+    # サイコロの目を選ぶ --- (※1)
+    r = random.randint(1, 6)
+    # 画像を表示するHTMLを動的に生成して表示 --- (※2)
+    js.document.write(f"<img src='dice/{r}.png'>")
+</script>

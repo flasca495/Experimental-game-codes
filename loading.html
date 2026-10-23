@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<script type="module" src="https://pyscript.net/releases/2025.8.1/core.js"></script>
+<body>
+    <div id="loading">
+        <h1>ダウンロード中...</h1>
+        <p>現在，実行環境をダウンロードしています。少々お待ちください。</p>
+    </div>
+    <div id="content" style="display: none;">
+        <h1>ゲーム開始</h1>
+    </div>
+</body>
+
+<script type="py">
+    import js
+    js.document.getElementById("loading").style.display = "none"
+    js.document.getElementById("content").style.display = "block"
+</script>

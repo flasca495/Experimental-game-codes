@@ -6,7 +6,8 @@ body {
     font-size: 8em;
     color: white;
     background-color: white;
-    padding: 50px 100px;
+    width: 100%;
+    height: auto;
 }
 
 .image_area {

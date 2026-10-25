@@ -19,6 +19,6 @@ def stop():
         color = "red"
     disp = document.getElementById("disp")
     disp.innerText = str(r)
-    disp.style.color = color
+    disp.style.backgroundColor = color
     roulette = document.getElementById("roulette")
     roulette.style.animation = "none"

@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+    <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <script type="module" src="https://pyscript.net/releases/2025.8.1/core.js"></script>
+       <script type="mpy" src="./click_roulette.py"></script>
+       <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div><button mpy-click="start">ルーレットを回す</button></div>
+        <div class="image_area" id="image_area">
+            <img class="roulette" id="roulette" src="roulette.png" alt="ルーレットの画像">
+        </div>
+        <div class="disp" id="disp"></div>
+    </body>
+</html>

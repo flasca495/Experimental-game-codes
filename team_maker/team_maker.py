@@ -1,5 +1,4 @@
 
-import random
 from pyscript import document
 from js import Math
 
@@ -30,8 +29,8 @@ def make_teams(event):
         return
 
     for i in range(len(names) - 1, 0, -1):
-    j = int(Math.random() * (i + 1))
-    names[i], names[j] = names[j], names[i]
+        j = int(Math.random() * (i + 1))
+        names[i], names[j] = names[j], names[i]
 
     teams = [[] for _ in range(team_count)]
 

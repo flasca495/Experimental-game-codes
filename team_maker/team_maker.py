@@ -29,7 +29,7 @@ def make_teams(event):
         message.innerText = "参加者の人数がチーム数より少ないです。"
         return
 
-    random.shuffle(names)
+    names = random.sample(names, len(names))
 
     teams = [[] for _ in range(team_count)]
 

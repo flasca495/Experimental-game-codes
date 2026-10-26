@@ -1,7 +1,7 @@
 
 import random
 from pyscript import document
-
+from js import Math
 
 def make_teams(event):
     names_text = document.getElementById("names").value
@@ -29,7 +29,9 @@ def make_teams(event):
         message.innerText = "参加者の人数がチーム数より少ないです。"
         return
 
-    names = random.sample(names, len(names))
+    for i in range(len(names) - 1, 0, -1):
+    j = int(Math.random() * (i + 1))
+    names[i], names[j] = names[j], names[i]
 
     teams = [[] for _ in range(team_count)]
 

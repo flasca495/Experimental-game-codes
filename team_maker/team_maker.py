@@ -1,7 +1,7 @@
 
 import random
 from pyscript import document
-from pyodide.ffi import create_proxy
+
 
 def make_teams(event):
     names_text = document.getElementById("names").value

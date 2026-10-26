@@ -1,0 +1,48 @@
+
+body {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: sans-serif;
+    background-color: #f5f7fa;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+textarea,
+select {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.team {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#message {
+    color: #c0392b;
+}

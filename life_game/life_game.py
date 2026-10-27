@@ -5,8 +5,8 @@ from js import document, setTimeout
 DEAD, ALIVE = 0, 1
 COLORS = ["white", "red"]
 SIZE = 20
-COLS = 400 // SIZE
-ROWS = 400 // SIZE
+COLS = 800 // SIZE
+ROWS = 800 // SIZE
 
 # 以下で描画対象のCanvasとコンテキストを取得
 canvas = document.getElementById("canvas")

@@ -5,8 +5,8 @@ from js import document, setTimeout
 DEAD, ALIVE = 0, 1
 COLORS = ["white", "red"]
 SIZE = 20
-COLS = 800 // SIZE
-ROWS = 800 // SIZE
+COLS = 400 // SIZE
+ROWS = 400 // SIZE
 
 # 以下で描画対象のCanvasとコンテキストを取得
 canvas = document.getElementById("canvas")
@@ -41,10 +41,11 @@ def count_alive_cells(cells, x, y):
     for dy in [-1, 0, 1]:
         for dx in [-1, 0, 1]:
             if dy == 0 and dx == 0:
-               continue
+                continue
+
             nx, ny = x + dx, y + dy
-                if 0 <= nx < COLS and 0 <= ny < ROWS:
-                    count += cells[ny][nx]
+            if 0 <= nx < COLS and 0 <= ny < ROWS:
+                count += cells[ny][nx]
     return count
 
 def draw_canvas():

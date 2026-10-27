@@ -40,7 +40,8 @@ def count_alive_cells(cells, x, y):
     count = 0
     for dy in [-1, 0, 1]:
         for dx in [-1, 0, 1]:
-            if dy == 0 and dx == 0:
+            if dy == 0 and dx == 0
+                 continue
                 nx, ny = x + dx, y + dy
                 if 0 <= nx < COLS and 0 <= ny < ROWS:
                     count += cells[ny][nx]

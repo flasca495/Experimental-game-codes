@@ -1,3 +1,46 @@
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div  {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+    height: auto;
+}
+
 span {
     font-weight: bold;
+}
+
+.input_wrapper {
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 120px;
+}
+
+label {
+    padding: 5px 8px;
+    margin-right: 20px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+.form {
+    margin-top: 40px;
+}
+
+button {
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px 8px;
+    display: block;
+}
+
+footer {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 80px;
 }
